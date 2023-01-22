@@ -1,6 +1,6 @@
 import * as React                      from 'react'
-import { ModelController, ModelState } from '../lib/modelController'
-import { ModelData }                   from '../lib/modelDataParser'
+import { ModelController, ModelState } from '../../lib/modelController'
+import { ModelData }                   from '../../lib/modelDataParser'
 
 type Data = ModelState
 

@@ -1,5 +1,5 @@
 import * as React                from 'react'
-import { INITIAL_UI_BACKGROUND } from '../const/constants'
+import { INITIAL_UI_BACKGROUND } from '../../const/constants'
 
 const LOCAL_STORAGE_KEY = '__hlmv_background_color'
 

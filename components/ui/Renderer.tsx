@@ -1,9 +1,9 @@
 import * as React                                                from 'react'
 import { WindowSizeSensor }                                      from 'libreact/lib/WindowSizeSensor'
-import { ModelData, parseModel }                                 from '../lib/modelDataParser'
-import { buildTexture }                                          from '../lib/textureBuilder'
-import { prepareRenderData, createModelMeshes, createContainer } from '../lib/modelRenderer'
-import { createModelController, ModelController }                from '../lib/modelController'
+import { ModelData, parseModel }                                 from '../../lib/modelDataParser'
+import { buildTexture }                                          from '../../lib/textureBuilder'
+import { prepareRenderData, createModelMeshes, createContainer } from '../../lib/modelRenderer'
+import { createModelController, ModelController }                from '../../lib/modelController'
 import {
   createOrbitControls,
   createRenderer,
@@ -11,7 +11,7 @@ import {
   createLights,
   createClock,
   createScene
-} from '../lib/screneRenderer'
+} from '../../lib/screneRenderer'
 
 const useAnimationFrame = function<T extends (...args: any[]) => void>(callback: T) {
   const callbackRef = React.useRef(callback)

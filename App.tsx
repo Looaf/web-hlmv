@@ -1,18 +1,17 @@
-import * as leetModel          from '../__mock__/leet.mdl'
+import * as leetModel          from './__mock__/leet.mdl'
 import * as React              from 'react'
 import { hot }                 from 'react-hot-loader'
 import DropzoneContainer       from 'react-dropzone'
-import { ModelController }     from '../lib/modelController'
-import { ModelData }           from '../lib/modelDataParser'
-import { LoadingScreen }       from './LoadingScreen'
-import { Renderer }            from './Renderer'
-import { Controller }          from './Controller'
-import { GlobalStyles }        from './GlobalStyles'
-import { Dropzone }            from './Dropzone'
-import { BackgroundContainer } from './BackgroundContainer'
-import { FileContainer }       from './FileContainer'
-import { GithubButton }        from './GithubButton'
-import { StartScreen }         from './StartScreen'
+import { ModelController }     from './lib/modelController'
+import { ModelData }           from './lib/modelDataParser'
+import { LoadingScreen }       from './components/ui/LoadingScreen'
+import { Renderer }            from './components/ui/Renderer'
+import { Controller }          from './components/ui/Controller'
+import { GlobalStyles }        from './components/ui/GlobalStyles'
+import { Dropzone }            from './components/ui/Dropzone'
+import { BackgroundContainer } from './components/ui/BackgroundContainer'
+import { FileContainer }       from './components/ui/FileContainer'
+import { StartScreen }         from './components/ui/StartScreen'
 
 /** Is need to show demo */
 export const App = hot(module)(() => {
@@ -31,8 +30,6 @@ export const App = hot(module)(() => {
                 {({ backgroundColor }, { setBackgroundColor }) => (
                   <React.Fragment>
                     <GlobalStyles backgroundColor={backgroundColor} color="#fff" />
-
-                    <GithubButton />
 
                     <Controller
                       isLoading={isLoading}
