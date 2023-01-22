@@ -1,12 +1,19 @@
-# Web Half-Life Model Viewer [![Build Status](https://travis-ci.org/danakt/web-hlmv.svg?branch=master)](https://travis-ci.org/danakt/web-hlmv)
+# Web TF2 Model Viewer
 
-This repo contains the source code powering [danakt.com/web-hlmv](https://danakt.com/web-hlmv). The tool was made as a simple multiplatform alternative to [Half-Life Model Viewer](https://github.com/ValveSoftware/halflife/tree/master/utils/mdlviewer).
+This repo was built off the source code powering [danakt.com/web-hlmv](https://danakt.com/web-hlmv). The tool was made as a simple multiplatform alternative to [Half-Life Model Viewer](https://github.com/ValveSoftware/halflife/tree/master/utils/mdlviewer).
 
 <div style="text-align:center">
   <img src ="./screenshot.png" width="100%"/>
 </div>
 
-## Todo
+## Installation!
+
+1. make sure you are using a version of node (I am developing on `v16.19.0`).
+   1. this is because openSSL v3.0 has caused issues on later versions.
+2. Install the dependencies with `yarn install`
+3. run `yarn run start`
+
+## Todo (from parent repo)
 
 - Fix bone positions calculation (resolve problems with weapons rendering)
 - Add first person weapons viewing and mirroring model
